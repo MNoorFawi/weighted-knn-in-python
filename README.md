@@ -9,7 +9,6 @@ Import important libraries.
 import pandas as pd
 import numpy as np
 from sklearn.neighbors import KDTree
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 import seaborn as sns
 import random
