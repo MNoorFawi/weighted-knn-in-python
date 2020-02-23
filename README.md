@@ -44,7 +44,7 @@ corr_map = sns.heatmap(corr, annot = True,
                        fmt = ".1g", cmap = "coolwarm")
 ```
 
-![](weighted_knn_files\\figure-gfm\\corr_mat.png)
+![](weighted_knn_files/figure-gfm/corr_mat.png)
 
 Extract important variables and **standardize** train and test data.
 
