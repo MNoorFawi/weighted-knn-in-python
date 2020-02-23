@@ -122,7 +122,6 @@ def testalgorithm(algo, kdtree, testset, target, test_target):
 ```
 
 Test the algorithm.
-
 ``` python
 random.seed(1191)
 ex = random.sample(range(len(test)), 5)
