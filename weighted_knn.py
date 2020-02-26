@@ -39,6 +39,15 @@ print("train price: \n", list(train_price[nearest_ind[0]]))
 
 def inverseweight(dist, num = 1.0, const = 0.1):
     return num / (dist + const)
+  
+def gaussian(dist, sigma = 10.0):
+    return math.e ** (- dist ** 2 / ( 2 * sigma ** 2))
+
+def subtractweight(dist, const = 2.0):
+    if dist > const:
+        return 0.001
+    else:
+        return const - dist
 
 def weighted_knn(kdtree, test_point, target, k = 25,
                 weight_fun = inverseweight):
